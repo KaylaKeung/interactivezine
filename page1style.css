@@ -1,16 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Economica:400,700);
 
 body {
-  background:lightblue;
+  background:white;
   font-family: "Economica", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-
+  -webkit-backface-visibility: hidden;
 }
 
 :root {
-    --primary-bg:rgb(1, 1, 44)
-;
+    --primary-bg:black;
   }
   
   * {
@@ -20,12 +19,11 @@ body {
   }
   
   body {
-    
+    overflow: hidden;
     font-family: "Economica", sans-serif;
-    height:auto;
   }
   
-
+  /* nav wrapper styling */
   #nav-wrapper {
     position: absolute;
     right: -20vmax;
@@ -51,7 +49,7 @@ body {
     display: block;
     width: 40px;
     height: 5px;
-    background: white;
+    background: grey;
     margin: 7px 0;
   }
   
@@ -106,7 +104,10 @@ body {
     opacity: 1;
   }
   
-
+  /* #nav-links a:not(:hover){
+    color:#d3d3d3;
+  } */
+  
   .menu-closed {
     width: 0 !important;
     height: 0 !important;
@@ -115,11 +116,11 @@ body {
 
 .home{
     position: absolute;
-    
-   
+    display: flex;
+    align-items: center;
     margin: 20%;
     margin-top:10%;
-   
+    justify-content: center;
     font-size:5vh;
     line-height: 7vh;
     text-decoration:none;
@@ -127,11 +128,3 @@ body {
     z-index: -10;
 }
 
-h1{
-    text-transform: uppercase;
-    padding: 7vh;
-    line-height: 8vh;;
-    position: relative;
-
-    left:-10%;
-}
