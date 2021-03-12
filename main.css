@@ -38,7 +38,6 @@ a:visited {
 }
 .menu-bottom {
   position: absolute;
-
   top: 75%;
   text-align: right;
   z-index: 3;
