@@ -1,121 +1,119 @@
-
 @import url(https://fonts.googleapis.com/css?family=Economica:400,700);
 
-html,body{
-    margin:0;
-height:100%;
-    width:100%;
-    
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
-svg{
- position:relative;
-    width:100%;
-    height:100%;
-    display:flex;
-    margin:auto;
-align-items:justify;
-justify-content: center;
-z-index: 0;
-color:white;
-stroke:white;
+svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  align-items: justify;
+  justify-content: center;
+  z-index: 0;
+  color: white;
+  stroke: white;
 }
-.eye{
-    stroke:white;
-    color:white;
+.eye {
+  stroke: white;
+  color: white;
+}
+.menu-top {
+  position: absolute;
+  margin: auto;
+  z-index: 3;
+  top: 0;
+  left: 1%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+.menu-bottom {
+  position: absolute;
 
+  top: 75%;
+  text-align: right;
+  z-index: 3;
+  left: 32%;
+  display: table-row;
+  text-align: justify;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-.menu-top{
-    position: absolute;
-    margin:auto;
-    z-index: 3;
-    top:0;
-left:1%;
-
+h2 {
+  font-family: "Economica", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  text-transform: uppercase;
 }
-a{text-decoration: none;
-    color: inherit;
-
+h1 {
+  font-family: "Economica", sans-serif;
+  font-size: 80px;
 }
-a:visited{color:inherit}
-.menu-bottom{
-    position: absolute;
-  
-    top:75%;
-    text-align: right;
-    z-index: 3;
-    left:32%;
-display: table-row;
-text-align: justify;
-display: flex;
-margin: auto;
-text-align: center;
-align-items: center;
-justify-content: center;
-}
-h2{
-    font-family: "Economica", sans-serif;
-    font-size:100px;
-    text-align: center;
-    text-transform: uppercase;
-}
-h1{
-    font-family: "Economica", sans-serif;
-    font-size:80px;
-}
-h2:hover{
-    animation-name: circle;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-direction: alternate;
+h2:hover {
+  animation-name: circle;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-direction: alternate;
 }
 @keyframes circle {
-    from { transform: rotate(0deg) translateX(40px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(40px) rotate(-360deg); }
+  from {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+  }
 }
 @media screen and (max-width: 1500px) {
-    h2{
-        
-        font-size:90px;
-        text-align: justify;
-    }
-    .menu-bottom{
-        bottom:0%;
-    
-
-    }
+  h2 {
+    font-size: 90px;
+    text-align: justify;
+  }
+  .menu-bottom {
+    bottom: 0%;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .menu-top{
-        position: absolute;
-        z-index: 3;}
-    h1{
-        font-size:60px;
-    }
-    
-    
-    .menu-bottom{
-        top:59%;
-        left:27%;
-    }
-    
-    h2{
-        
-        font-size:60px;
-        text-align: justify;
-    }
+  .menu-top {
+    position: absolute;
+    z-index: 3;
+  }
+  h1 {
+    font-size: 60px;
+  }
+
+  .menu-bottom {
+    top: 59%;
+    left: 27%;
+  }
+
+  h2 {
+    font-size: 60px;
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 600px) {
-    h1{
-     font-size:40px;}
-  
+  h1 {
+    font-size: 40px;
+  }
 
-   h2{
-       font-size: 50px;
-   }
-   .menu-bottom{
-       bottom:0;
-       left:25%;
-   }
-  
+  h2 {
+    font-size: 50px;
+  }
+  .menu-bottom {
+    bottom: 0;
+    left: 25%;
+  }
 }
