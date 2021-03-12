@@ -121,10 +121,17 @@ body {
     margin: 20%;
     margin-top:10%;
     justify-content: center;
-    font-size:5vh;
+    font-size:20vh;
     line-height: 7vh;
     text-decoration:none;
-    text-transform: none;
+  top:21%;
+  
     z-index: -10;
+    -webkit-text-stroke:3px black;
+    animation: circle infinite 3s alternate ease-in-out;
 }
 
+@keyframes circle {
+  from { transform: rotate(0deg) translateX(40px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(40px) rotate(-360deg); }
+}
