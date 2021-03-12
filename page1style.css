@@ -129,8 +129,46 @@ body {
     z-index: -10;
 animation: circle ease-in-out alternate infinite 3s;
 }
-
-
+.circle1{
+  color:transparent;
+  width:100vh;
+  height:100vh;
+  border-radius: 100vh;
+  border:20px red inset;
+  position: relative;
+  left:-40%;z-index: -99;
+}
+.circle2{
+  color:transparent;
+  width:80vh;
+  height:80vh;
+  border-radius: 100vh;
+  border:15px rgb(84, 133, 224) inset;
+  position: absolute;
+  top:-30%;
+  right:-95%;;
+  z-index: -99;
+}
+.circle3{
+  color:transparent;
+  width:150vh;
+  height:150vh;
+  border-radius: 200vh;
+  border:10px rgb(224, 222, 84) inset;
+  position: absolute;
+  top:40%;
+  right:-120%;;
+  z-index: -99;
+}
+.circle1:hover{
+  animation: circle 3s;
+}
+.circle2:hover{
+  animation: circle 3s;
+}
+.circle3:hover{
+  animation: circle 3s;
+}
 @keyframes circle {
   from { transform: rotate(0deg) translateX(40px) rotate(0deg); }
   to   { transform: rotate(360deg) translateX(40px) rotate(-360deg); }
